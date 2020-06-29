@@ -20,7 +20,9 @@ app.get("/api/notes", function(req, res){
 app.post("/api/notes", function(req, res){
     let newNote = req.body
     newNote.id = Date.now()
+noteList.push = (newNote)
 
+res.send(newNote)
     
 });
 
