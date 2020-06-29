@@ -21,11 +21,11 @@ app.post("/api/notes", function(req, res){
     let newNote = req.body
     newNote.id = Date.now()
 
-    res.send()
+    
 });
 
 app.delete("/api/notes:id", function(req, res){
-    
+    const noteId = req.params.id
     res.send({id: noteId})
 });
 
