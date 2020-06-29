@@ -13,3 +13,11 @@ const noteList = [];
 app.get("/api/notes", function(req, res){
     res.send(...something...)
 });
+
+app.post("/api/notes", function(req, res){
+    res.send(...something...)
+});
+
+app.listen("/api/notes", function(){
+    console.log('App listening on PORT' + PORT)
+});
