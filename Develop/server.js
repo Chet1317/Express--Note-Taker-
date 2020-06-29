@@ -14,7 +14,6 @@ let noteList = [
 
 app.get("/api/notes", function(req, res){
    res.send(noteList)
-
     res.send()
 });
 
@@ -26,7 +25,8 @@ app.post("/api/notes", function(req, res){
 });
 
 app.delete("/api/notes:id", function(req, res){
-    res.send()
+    
+    res.send({id: noteId})
 });
 
 app.listen(PORT, function(){
