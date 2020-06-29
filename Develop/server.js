@@ -9,7 +9,7 @@ app.use(express.json())
 app.use (express.urlencoded({extended:true}))
 
 let noteList = [
-    { title: "first note placeholder title", text: "first note text", id= 1000}
+    { title: "first note placeholder title", text: "first note text", id: 1000}
 ]
 
 app.get("/api/notes", function(req, res){
