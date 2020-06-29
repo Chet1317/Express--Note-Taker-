@@ -10,6 +10,6 @@ app.use (express.urlencoded({exntended:true}))
 
 
 
-app.listen("/api/notes", function(){
+app.listen("/api/notes:id", function(){
     console.log('App listening on PORT' + PORT)
 });
