@@ -19,6 +19,11 @@ function saveNotes(){
     fs.writeFileSync(fileName, JSON.stringify(noteList))
 }
 
+function loadNotes(){
+    fs.readFileSync(fileName, "utf8")
+    return loadNotes
+}
+
 app.get("/api/notes", function(req, res){
    res.send(noteList)
 
