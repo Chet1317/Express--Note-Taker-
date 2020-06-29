@@ -29,7 +29,11 @@ res.send(newNote)
 app.delete("/api/notes/:id", function(req, res){
     const noteId = req.params.id
     res.send({id: noteId})
+
+    noteList = noteList.filter(note =>note.id != noteId)
 });
+
+
 
 app.listen(PORT, function(){
     console.log('App listening on PORT' + PORT)
