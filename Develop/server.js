@@ -14,7 +14,7 @@ let noteList = [
 
 app.get("/api/notes", function(req, res){
    res.send(noteList)
-    res.send()
+
 });
 
 app.post("/api/notes", function(req, res){
