@@ -18,6 +18,11 @@ app.post("/api/notes", function(req, res){
     res.send(...something...)
 });
 
+app.delete("/api/notes:id", function(req, res){
+   
+});
+
+
 app.listen("/api/notes", function(){
     console.log('App listening on PORT' + PORT)
 });
