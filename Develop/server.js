@@ -1,6 +1,5 @@
 const express = require("express");
 const fs = require("fs");
-const { json } = require("express");
 const app = express ();
 const PORT = 3000;
 
@@ -9,18 +8,18 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use (express.urlencoded({extended:true}))
 
-const fileName = db.json
-
-let noteList = loadNotes
+const fileName = "db/db.json"
 
 function saveNotes(){
     fs.writeFileSync(fileName, JSON.stringify(noteList))
 }
 
 function loadNotes(){
-    fs.readFileSync(fileName, "utf8")
+    const loadNotes= JSON.parse(fs.readFileSync(fileName, "utf8"))
     return loadNotes
 }
+
+let noteList = loadNotes()
 
 app.get("/api/notes", function(req, res){
    res.send(noteList)
