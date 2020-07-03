@@ -1,0 +1,23 @@
+{
+  "name": "express--note-taker-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chet1317/Express--Note-Taker-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chet1317/Express--Note-Taker-/issues"
+  },
+  "homepage": "https://github.com/Chet1317/Express--Note-Taker-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "package.json": "^2.0.1"
+  }
+}
