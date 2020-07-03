@@ -11,7 +11,7 @@ app.use (express.urlencoded({extended:true}))
 const file = "db/db.json"
 
 function savedNotes(){
-    fs.writeFileSync(file, JSON.stringify(noteList))
+    fs.writeFileSync(file, JSON.stringify(list))
 }
 
 function loadingNotes(){
