@@ -10,6 +10,10 @@ app.use (express.urlencoded({extended:true}))
 
 const file = "db/db.json"
 
+
+let list = loadingNotes()
+
+
 function savedNotes(){
     fs.writeFileSync(file, JSON.stringify(list))
 }
@@ -19,7 +23,6 @@ function loadingNotes(){
     return loadNotes
 }
 
-let list = loadingNotes()
 
 app.get("/api/notes", function(req, res){
    res.send(list)
