@@ -42,7 +42,7 @@ app.delete("/api/notes/:id", function(req, res){
     const notesId = req.params.id
     res.send({id: notesId})
     savedNotes()
-    list = list.filter(note =>note.id != noteId)
+    list = list.filter(note =>note.id != notesId)
 });
 
 
